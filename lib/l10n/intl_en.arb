@@ -1,0 +1,16 @@
+{
+    "appTitle": "Template App",
+    "@appTitle": {
+        "description": "The app for starters :)"
+    },
+    "selectLanguage": "Select Language",
+    "english": "English",
+    "german": "German",
+    "selectTheme": "Select Theme",
+    "lightTheme": "Light Theme",
+    "darkTheme": "Dark Theme",
+    "highContrast": "Hight Contrast",
+    "biggerFonts": "Bigger Fonts",
+    "buttonHome": "Home",
+    "buttonExit": "Exit"
+}

@@ -1,0 +1,16 @@
+{
+  "appTitle": "Vorlage App",
+  "@appTitle": {
+    "description": "Die App für den Anfang :)"
+  },
+  "selectLanguage": "Sprache auswählen",
+  "english": "Englisch",
+  "german": "Deutsch",
+  "selectTheme": "Thema auswählen",
+  "lightTheme": "Leichtes Thema",
+  "darkTheme": "Dunkles Thema",
+  "highContrast": "Hoher Kontrast",
+  "biggerFonts": "Größere Schriftarten",
+  "buttonHome": "Heim",
+  "buttonExit": "Ausfahrt"
+}
