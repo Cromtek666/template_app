@@ -1,4 +1,6 @@
 import 'package:go_router/go_router.dart';
+import '../features/medialibrary/presentation/pages/medialibrary_page.dart';
+import '../features/mediaplayer/presentation/pages/mediaplayer_page.dart';
 
 import '../core/error/error_page.dart';
 import '../features/home/presentation/pages/home_page.dart';
@@ -24,6 +26,18 @@ class AppRoutes {
             path: 'intro',
             builder: (final context, final state) {
               return const IntroPage();
+            },
+          ),
+          GoRoute(
+            path: 'mediaplayer',
+            builder: (final context, final state) {
+              return MediaPlayerPage();
+            },
+          ),
+          GoRoute(
+            path: 'medialibrary',
+            builder: (final context, final state) {
+              return MediaLibraryPage();
             },
           ),
         ],

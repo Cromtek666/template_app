@@ -176,11 +176,11 @@ class _HomePage extends ConsumerState<HomePage> {
                 value: locales.entries
                     .firstWhere((final entry) => entry.value == currentLocale)
                     .key,
-                onChanged: (final String? newLanguage) {
+                onChanged: (final String? newLanguage) async {
                   if (newLanguage != null) {
                     final selectedLocale = locales[newLanguage];
                     if (selectedLocale != null) {
-                      ref
+                      await ref
                           .read(localeNotifierProvider.notifier)
                           .setLocale(selectedLocale);
 
@@ -204,9 +204,11 @@ class _HomePage extends ConsumerState<HomePage> {
 
               /// Checkbox for the intro seen status.
               GFCheckbox(
-                onChanged: (final bool? newValue) {
+                onChanged: (final bool? newValue) async {
                   if (newValue != null) {
-                    ref.read(introSeenProvider.notifier).setIntroSeen(newValue);
+                    await ref
+                        .read(introSeenProvider.notifier)
+                        .setIntroSeen(newValue);
 
                     ///< Sets the intro seen status.
                   }

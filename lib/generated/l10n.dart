@@ -60,6 +60,16 @@ class S {
     );
   }
 
+  /// `Welcome!`
+  String get welcomeText {
+    return Intl.message(
+      'Welcome!',
+      name: 'welcomeText',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Select Language`
   String get selectLanguage {
     return Intl.message(

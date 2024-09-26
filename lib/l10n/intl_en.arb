@@ -3,6 +3,7 @@
     "@appTitle": {
         "description": "The app for starters :)"
     },
+    "welcomeText": "Welcome!",
     "selectLanguage": "Select Language",
     "english": "English",
     "german": "German",

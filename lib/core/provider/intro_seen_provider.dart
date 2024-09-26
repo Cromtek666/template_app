@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -7,7 +9,7 @@ class IntroSeenNotifier extends StateNotifier<bool> {
   /// Constructor for `IntroSeenNotifier`.
   /// Initializes the state by loading the persisted intro status.
   IntroSeenNotifier() : super(false) {
-    _init();
+    unawaited(_init());
   }
 
   /// Initializes the async operation to load the intro status.

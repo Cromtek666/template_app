@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../../../generated/l10n.dart';
 
 /// `IntroPage` is a StatefulWidget that represents an introduction screen with a series of slides.
 /// It allows users to navigate through the slides and complete the introduction.
@@ -70,14 +71,14 @@ class _IntroPage extends State<IntroPage> {
         child: GFImageOverlay(
           width: size.width,
           padding: const EdgeInsets.all(16),
-          child: const Row(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(top: 70.0, left: 20),
+                padding: const EdgeInsets.only(top: 70.0, left: 20),
                 child: Text(
-                  'Welcome!',
-                  style: TextStyle(
+                  S.of(context).welcomeText,
+                  style: const TextStyle(
                       color: Colors.white,
                       decoration: TextDecoration.none,
                       fontSize: 25),

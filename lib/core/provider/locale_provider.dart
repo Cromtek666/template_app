@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -8,7 +10,7 @@ class LocaleNotifier extends StateNotifier<Locale> {
   /// Constructor for `LocaleNotifier`.
   /// Initializes the state with the default locale ('en') and loads the saved locale if available.
   LocaleNotifier() : super(const Locale('en')) {
-    _init();
+    unawaited(_init());
 
     ///< Initializes the locale asynchronously.
   }
